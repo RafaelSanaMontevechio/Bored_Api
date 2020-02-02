@@ -1,0 +1,56 @@
+<%- include('partials/header') %>
+
+<br>
+
+<form class="form-inline my-2 my-lg-0" method="POST">
+    <input class="form-control mr-sm-2" type="search" name="type" placeholder="Search by type" aria-label="Search"
+        required>
+    <button class="btn btn-outline-primary my-2 my-sm-0">Search</button>
+</form>
+
+<br>
+<br>
+
+<% if(activity) { %>
+<table class="table table-hover">
+    <tbody>
+        <tr>
+            <th scope="row">Activity</th>
+            <td><%= activity.activity %></td>
+        </tr>
+        <tr>
+            <th scope="row">Accessibility</th>
+            <td><%= activity.accessibility %></td>
+        </tr>
+        <tr>
+            <th scope="row">Type</th>
+            <td><%= activity.type %></td>
+        </tr>
+        <tr>
+            <th scope="row">Participants</th>
+            <td><%= activity.participants %></td>
+        </tr>
+        <tr>
+            <th scope="row">Price</th>
+            <td><%= activity.price %></td>
+        </tr>
+        <tr>
+            <th scope="row">Key</th>
+            <td><%= activity.key %></td>
+        </tr>
+    </tbody>
+</table>
+<% } %>
+<hr>
+
+<br>
+<br>
+
+<a href="/activity/random">
+    <button type="button" class="btn btn-primary">Get another activity randomly</button>
+</a>
+<a href="/activity/save/<%= activity.type %>/<%= activity.activity %>">
+    <button type="button" class="btn btn-primary">Save activity</button>
+</a>
+
+<%- include('partials/footer') %>

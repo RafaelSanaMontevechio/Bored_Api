@@ -1,0 +1,32 @@
+<!-- <%- JSON.stringify(activities) %> -->
+
+<%- include('partials/header') %>
+
+<br>
+<br>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Activity</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(let i = 0; i < activities.length; i++) { %>
+        <tr>
+            <td><%= activities[i].type %></td>
+            <td><%= activities[i].activity %></td>
+            <td> <a href="/activity/delete/<%= activities[i].activity %>" onclick=" return confirm('Would you like to delete this activity?')">
+                    <button class="btn btn-outline-primary">Delete</button>
+                </a>
+            </td>
+        </tr>
+        <% } %>
+    </tbody>
+</table>
+
+<hr>
+
+<%- include('partials/footer') %>
