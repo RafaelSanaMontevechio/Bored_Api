@@ -8,10 +8,14 @@ Obs.: É necessário antes de instalar este projeto, ter o nodejs instalado.
 
 Para instalá-lo em sua máquina faça os comandos a seguir:
 
-git clone https://github.com/RafaelSanaMontevechio/Bored_api-desafio-hvex.git
-  cd Bored_api-desafio-hvex
-  npm install
-  npm start
+git clone https://github.com/RafaelSanaMontevechio/Bored_api-desafio-hvex.git  
+
+  cd Bored_api-desafio-hvex  
+  
+  npm install  
+  
+  npm start  
+  
   
 
 ## Autor
