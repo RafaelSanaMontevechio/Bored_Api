@@ -6,7 +6,7 @@ Este é um projeto exemplo utilizando a BORED api.
 ## Instalando
 Obs.: É necessário antes de instalar este projeto, ter o nodejs instalado.
 
-Após instalar o node,  para executar em o projeto em sua máquina siga os comandos a seguir:
+Após instalar o node,  para executar o projeto em sua máquina siga os comandos a seguir:
 
 git clone https://github.com/RafaelSanaMontevechio/Bored_api-desafio-hvex.git  
 
