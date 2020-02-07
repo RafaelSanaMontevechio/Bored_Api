@@ -1,9 +1,8 @@
-const express = require('express');
-
-const activityController = require('../controllers/activity');
-
 const activityRouter = () => {
-    const router = express.Router();
+    const router = require('express').Router();
+
+    const activityController = require('../controllers/activity');
+
     router.get('/index', activityController.activity);
     router.get('/random', activityController.getActivity);
     router.post('/index', activityController.getActivityByType);

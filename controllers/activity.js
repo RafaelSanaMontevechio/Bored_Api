@@ -27,10 +27,10 @@ const saveActivity = (req, res) => {
 }
 
 const getFavoriteActivities = (req, res) => {
-   const activities = api.getFavoriteActivities();
-   res.render('favorite', {
-       activities
-   });
+    const activities = api.getFavoriteActivities();
+    res.render('favorite', {
+        activities
+    });
 }
 
 const deleteActivity = (req, res) => {
